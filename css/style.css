@@ -1,0 +1,38 @@
+body {
+    margin: auto;
+    background: #7E0909;
+    padding: 30px;
+    
+}
+
+
+.tab-pane {
+    background: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.container {
+    width: 800px;
+}
+
+.nav-tabs li a {
+    color: black;
+    background: white; 
+    box-shadow: inset 0 -2px 0 0 #7E0909;
+}
+
+.nav {
+    color: black;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+    box-shadow: inset 0 0 0 0 ;
+}
