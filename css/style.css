@@ -32,7 +32,19 @@ body {
     color: black;
 }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover {
+.nav-tabs > li.active > a {
     box-shadow: inset 0 0 0 0 ;
+}
+
+.profile {
+    border-radius: 50%;
+    border: solid #7E0909;
+}
+
+.skills {
+    display: inline-block;
+}
+
+.title {
+    line-height: 10px;
 }
