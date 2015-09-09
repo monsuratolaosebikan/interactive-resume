@@ -45,6 +45,10 @@ body {
     display: inline-block;
 }
 
-.title {
+#header h1,h3 {
     line-height: 10px;
+}
+
+#workExperience {
+    text-align: left;
 }
