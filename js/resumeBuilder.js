@@ -12,7 +12,7 @@ var bio = {
     email: "monsuratolaosebikan@gmail.com",
     location: "Boston,MA"
   },
-  skills:["Android Development", "Solidworks", "HTML/CSS", "JAVA", "Javascript", "jQuery"],
+  skills:["HTML/CSS", "Java", "Javascript", "jQuery", "Bootstrap", "Jasmine Testing", "C++", "Android Development"],
   welcomeMessage: "Hire me please :)"
 }
 
@@ -65,7 +65,6 @@ var projects = {
 }
 
 if(bio.skills.length>0){
-  $("#skills").prepend(HTMLskillsStart);
   for(var i=0;i<bio.skills.length;i++){
   var formattedSkill = HTMLskills.replace("%data%",bio.skills[i]);
   $("#skills").append(formattedSkill);
