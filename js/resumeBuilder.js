@@ -58,8 +58,19 @@ var projects = {
   "projects":[
     {
       "title":"Novel Android App",
-      "dates":"2014",
-      "description":"Android app that scans books"
+      "dates":"May 2014",
+      "description":["This is an android app I designed that allows you to scan books and gives you important information like the average rating, title, author, number of pages,",
+		              "and a little description about the book. I love to read and sometimes I just peruse my local bookstore for interesting finds that I may not want to buy at the",
+		              "time but need a way of remembering them for later."],
+      "image":"images/novel_app_half.png"
+    },
+    {
+    	"title":"RSS FeedReader Testing",
+    	"dates":"September 2015",
+    	"description":["In this project I was given a web-based application that reads RSS feeds and used the Jasmine Test Framework to test the functionality of the RSS Reader.",
+				    	"The tests included checking if there was a defined name and url for each feed, if the menu was hidden upon opening the webpage, if the menu open and closed when the menu",
+				    	"icon was clicked, and if an asynchronous function successfully changed the html content dynamically when called" ],
+    	"image":"images/jasmine_testing.jpe"
     }
   ]
 }
@@ -96,13 +107,15 @@ $(document).click(function(loc) {
 var projectsDisplay = function(){
   for(project in projects.projects){
     $("#projects").append(HTMLprojectStart);
+    var formattedDates = HTMLprojectDates.replace("%data%",projects.projects[project].dates);
+    $("#projDesc").append(formattedDates);
+    var formattedDescription = HTMLprojectDescription.replace("%data%",projects.projects[project].description.join(" "));
+    $("#projDesc").append(formattedDescription);
     var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].title);
     $(".project-entry:last").append(formattedTitle);
+    var formattedImage = HTMLprojectImage.replace("%data%",projects.projects[project].image);
+    $(".project-entry:last").append(formattedImage);
     var formattedDates = HTMLprojectDates.replace("%data%",projects.projects[project].dates);
-    $(".project-entry:last").append(formattedDates);
-    var formattedDescription = HTMLprojectDescription.replace("%data%",projects.projects[project].description);
-    $(".project-entry:last").append(formattedDescription);
-
  }
 };
 

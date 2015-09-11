@@ -52,6 +52,10 @@ body {
     line-height: 10px;
 }
 
+.social {
+    margin-right: 40px;
+}
+
 .social li{
     display: inline-block;
     margin: 0 5px;
@@ -63,7 +67,7 @@ body {
     width: 50px;
     height: 50px;
     font-size:20px;
-    color:  #7E0909;
+    color:  #707070 ;
 }
 
 .social li:hover {
@@ -101,6 +105,16 @@ body {
 
 
 /* Projects Tab */
+  #projects {
+    text-align: center;
+}
+
+.proj-img {
+    cursor: pointer;
+    width: 250px;
+    height: 200px;
+    margin-bottom: 30px;
+}
 
 
 /* Experience Tab */
