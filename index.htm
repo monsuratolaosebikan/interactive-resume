@@ -7,6 +7,7 @@
   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
   	<script src="js/jQuery.js"></script>
  	<script src="js/helper.js"></script>
   	<link href="css/style.css" rel="stylesheet">
@@ -23,17 +24,17 @@
 			</li>
 			<li>
 				<a href="#projectTab" role="tab" data-toggle="tab">
-				<i class="fa fa-code"></i> Projects
+				<icon class="fa fa-code"></icon> Projects
 				</a>
 			</li>
 			<li>
 				<a href="#workExperience" role="tab" data-toggle="tab">
-	  			<i class="fa fa-briefcase"></i> Experience
+	  			<icon class="fa fa-briefcase"></icon> Experience
 				</a>
 			</li>
 			<li>
 				<a href="#education" role="tab" data-toggle="tab">
-	  			<i class="fa fa-graduation-cap"></i> Education
+	  			<icon class="fa fa-graduation-cap"></icon> Education
 				</a>
 			</li>
 		</ul>
@@ -55,16 +56,13 @@
 					</div>
 				</div>	
 				<div class="row">
-					<div class="col-md-12">
-						<img class="profile" src="images/profile_pic.jpg"/>
+					<div class="col-md-12 profile">
 					</div>
 				</div>
-				<div class="row">
 					<div class="col-md-12">
 						<div id="skills">
 						</div>
 					</div>
-				</div>
 			</div>
 			<div class="tab-pane fade" id="projectTab">
 				<div id="projects" class="row">
@@ -72,16 +70,15 @@
 				</div>
 			</div>
 			<div class="tab-pane fade" id="workExperience">
+				<div id="mapDiv"></div>
 			</div>
 			<div class="tab-pane fade" id="education">
 			</div>
 		</div>
 	</div>
+
 	<script src="js/resumeBuilder.js"></script>
 	<script type="text/javascript">
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
     if(document.getElementsByTagName('h1').length === 0) {
       document.getElementById('header').style.display = 'none';
     }
@@ -95,7 +92,7 @@
       document.getElementById('education').style.display = 'none';
     }
     if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
+      //document.getElementById('lets-connect').style.display = 'none';
     }
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
