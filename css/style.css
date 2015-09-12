@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    background: #7E0909;
+    background: #7e0909;
     padding: 25px;
 }
 
@@ -16,14 +16,19 @@ body {
     border-bottom: 1px solid #ddd;
     padding: 10px;
 }
+
 .container {
     width: 800px;
 }
 
-.nav-tabs li a {
+.social-a {
     color: black;
     background: white; 
     box-shadow: inset 0 -2px 0 0 #7E0909;
+}
+
+.social-a:hover {
+    color: #7E0909;
 }
 
 .nav {
@@ -56,7 +61,7 @@ body {
     margin-right: 40px;
 }
 
-.social li{
+.social li {
     display: inline-block;
     margin: 0 5px;
     list-style: none;
@@ -103,7 +108,6 @@ body {
     color: purple;
 }
 
-
 /* Projects Tab */
 
 #projects {
@@ -116,7 +120,6 @@ body {
     height: 200px;
     margin-bottom: 30px;
 }
-
 
 /* Experience Tab */
 
