@@ -140,6 +140,18 @@ body {
     padding-left: 10px;
 }
 
+#map {
+    display: block;
+    height: 100%;
+    margin: 0 5%;
+}
+
+#mapDiv {
+    height: 400px;
+    width: 100%;
+    padding: 0 0 5% 0;
+}
+
 /* Education Tab */
 
 .school-logo {

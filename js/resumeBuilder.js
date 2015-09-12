@@ -10,7 +10,7 @@ var bio = {
 	"role":role,
 	"contacts": {
 	"email": "monsuratolaosebikan@gmail.com",
-	"location": "Boston,MA"
+	"location": "Bridgeport,CT"
 	},
 	"picture": "images/profile_pic.jpg",
 	"skills":["HTML/CSS", "Java", "Javascript", "jQuery", "Bootstrap", "Jasmine Testing", "C++", "Android Development"],
@@ -141,3 +141,4 @@ displayWork();
 displayEducation();
 
 $("#mapDiv").append(googleMap);
+

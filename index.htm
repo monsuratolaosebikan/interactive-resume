@@ -7,9 +7,9 @@
   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
   	<script src="js/jQuery.js"></script>
  	<script src="js/helper.js"></script>
+ 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> 
   	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 </head>
@@ -70,7 +70,9 @@
 				</div>
 			</div>
 			<div class="tab-pane fade" id="workExperience">
-				<div id="mapDiv"></div>
+				<div id="mapDiv">
+					<h4 class="text-center"><strong>Where I've Lived and Worked</strong></h4>
+				</div>
 			</div>
 			<div class="tab-pane fade" id="education">
 			</div>
@@ -90,9 +92,6 @@
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
       document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      //document.getElementById('lets-connect').style.display = 'none';
     }
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
