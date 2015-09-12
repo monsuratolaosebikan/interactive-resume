@@ -62,6 +62,13 @@ function initializeMap() {
   */
   map = new google.maps.Map(document.querySelector('#map'), mapOptions);
 
+  /* Fixes issue with map not showing when experience tab is clicked by resizing the map */
+  $('a[href="#workExperience"]').on("shown.bs.tab", function(e) {
+      var center = map.getCenter();
+      google.maps.event.trigger(map, "resize");
+      map.setCenter(center);
+      map.setZoom(6);
+  });
 
   /*
   locationFinder() returns an array of every location string from the JSONs
@@ -190,3 +197,4 @@ window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
   map.fitBounds(mapBounds);
 });
+
